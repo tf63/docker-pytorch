@@ -1,0 +1,14 @@
+matplotlib
+jupyter
+ipykernel
+numpy
+pandas
+scipy
+pillow
+opencv-python
+tqdm
+flake8
+black
+Sphinx
+recommonmark
+sphinx_rtd_theme

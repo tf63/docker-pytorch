@@ -1,0 +1,12 @@
+{
+    "name": "PyTorch Project",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "pytorch",
+    "workspaceFolder": "/work",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "settings": {
+        "editor.tabSize": 4,
+    }
+}

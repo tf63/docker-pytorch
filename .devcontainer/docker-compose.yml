@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+  pytorch:
+    image: pytorch/nvidia:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+      shm_size: '8gb'
+    shm_size: '8gb'
+    container_name: 'pytorch'
+    stdin_open: true
+    tty: true
+    working_dir: '/work'
+    volumes:
+      - ../:/work
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
